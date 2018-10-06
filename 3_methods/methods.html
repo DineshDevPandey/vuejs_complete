@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>methods</title>
+	<script type="text/javascript" src="../vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<p>{{message}}</p>
+	</div>
+</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				message: 'I am vue method',
+			},
+			methods: {
+				getValue : function() {
+					alert(this.message);
+				},
+			}
+		});
+	</script>
+</html>
