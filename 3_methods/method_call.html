@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Method call</title>
+</head>
+<script type="text/javascript" src="../vue.js"></script>
+<body>
+	<div id="app">
+		<button v-on:click="showMessage">Click Me</button>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var vm = new Vue({
+		el: '#app',
+		data: {
+			message: "This is a method click",
+		},
+		methods: {
+			showMessage: function(){
+				alert(this.message);
+			}
+		}
+	})
+</script>
