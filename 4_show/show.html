@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>v-show dir</title>
+	<script type="text/javascript" src="../vue.js"></script>
+</head>
+<body>
+	<div id='app'>
+		<button v-on:click='message=!message'>click me</button>
+		<span v-show='message'>I am a span</span>
+	</div>
+</body>
+<script type="text/javascript">
+	var vm = new Vue({
+		el : '#app',
+		data : {
+			message : true
+		}
+	})
+</script>
+</html>
